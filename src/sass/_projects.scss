@@ -1,0 +1,31 @@
+@use './abstracts/mixins';
+@import './abstracts/variables';
+
+.projects{
+	@include mixins.flex(center, space-between, row);
+	transition: all .5s;
+	cursor: pointer;
+	padding: 30px 70px;
+	span{
+		color: inherit;
+		font-size: 40px;
+		text-align: start;		
+		min-width: 300px;
+	}
+	.task{
+		min-width: 200px;
+		text-align: end;		
+	}
+	.date{
+		min-width: 100px;
+		text-align: center;		
+	}
+
+	&:first-child{
+		padding-top: 30px;
+	}
+	&:hover{
+		transform: translateX(-10px);
+		color: $font-light-1;
+	}
+}

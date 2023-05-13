@@ -1,0 +1,16 @@
+@use './abstracts/mixins';
+@import './abstracts/variables';
+
+.header{
+    z-index: 100;
+    padding: 0 70px;
+    height: 80px;
+    position: absolute;
+    @include mixins.flex(center, space-between, row);
+    width: 100vw;
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+    }
+}

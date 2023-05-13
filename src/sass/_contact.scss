@@ -1,0 +1,7 @@
+@use './abstracts/mixins';
+@import './abstracts/variables';
+
+.contact{
+	display: grid;
+  grid-template-columns: 2fr 1fr;
+}
